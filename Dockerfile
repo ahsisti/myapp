@@ -2,7 +2,7 @@ FROM nginx:1.21-alpine
 
 WORKDIR /
 
-RUN npm install
+RUN apk add --update nodejs npm
 
 COPY . .
 
