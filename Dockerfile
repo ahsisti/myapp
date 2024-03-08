@@ -1,4 +1,4 @@
-FROM node:14
+FROM nginx:1.21-alpine
 
 WORKDIR /
 
