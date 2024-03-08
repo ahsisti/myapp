@@ -25,10 +25,10 @@ jobs:
           password: ${{ env.DOCKERHUB_KEY }}
 
       - name: Build Docker image
-        run: docker build -t ${{ env.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${GITHUB_SHA::7} .
+        run: docker build -t ahsisti/${{ env.IMAGE_NAME }}:${GITHUB_SHA::7} .
 
       - name: Push Docker image
-        run: docker push ${{ env.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${GITHUB_SHA::7}
+        run: docker push ahsisti/${{ env.IMAGE_NAME }}:${GITHUB_SHA::7}
 
       - name: Update values.yaml
         run: |
