@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: ahsisti/myapp:{{ .Values.env.APP_VERSION }}
+        image: ahsisti/myapp:v1
         ports:
         - containerPort: 80
