@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
   res.write('<head>');
   res.write('<title>Simple App</title>');
   res.write('</head>');
-  res.write('<body style="background-color: blue; color: white; text-align: center;">');
+  res.write('<body style="background-color: red; color: white; text-align: center;">');
   res.write('<h1>Application deployed</h1>');
   res.write('</body>');
   res.write('</html>');
