@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: ahsisti/myapp:v1
+        image: ahsisti/myapp:149cf1d
         ports:
         - containerPort: 80
